@@ -1,0 +1,347 @@
+*{
+    margin-left: 10px;
+    padding: 0;
+  }
+  
+  body nav {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+ .logo{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    
+ }
+
+.nav-items{
+ display: flex;
+ height: 5vh;
+ width: 20vh;
+ justify-content: center;
+ align-items: center;
+
+}
+.nav-item{
+margin: 30px;
+font-size: 25px;
+font-family: "Poppins";
+font-weight: 200;
+}
+
+.active-item{
+    
+   color: #fe5e35;
+   font-weight: 1000;
+    
+}
+.action-button{
+  position: absolute;
+  right: 120px;
+  top: 65px;
+
+
+}
+.intro-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* ---left section--- */
+
+.left-section{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  
+    align-items: flex-start;
+   
+}
+.left-section h3{
+    display: inline;
+    font-size: 50px;
+    font-weight: 400;   
+
+}
+ .left-section h3 img{
+    display: inline;
+ }
+ 
+.left-section h1{
+    font-size: 5rem;
+    font-weight: 400;
+    display: inline;
+    position: relative;
+    bottom: 100px;
+} 
+.sub-headlines{
+    position: relative;
+    bottom: 150px;
+    font-size: 25px;
+    left: 50px;
+}
+.sub-headline img{
+    background-color: #fe5e35;
+    border-radius: 20px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    height: 40px;
+    width: 50px;
+
+}
+
+.text{
+    position:relative;
+    bottom: 100px;
+    color: #758283;
+}
+
+.action-btns{
+ display: flex;
+ flex-direction: row;
+ position: relative;
+}
+
+.action-btn{
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 50px;
+    background-color: #fe5e35;
+    color: #ffffff;
+    font-family: "Poppins";
+    position: relative;
+    bottom: 100px;
+}
+
+/* ---right section--- */
+
+.right-section{
+    display: flex;
+    float: 1;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.discount-content{
+    position: relative;
+    top: 300px;
+    right: 10px;
+    color: #fff;
+}
+
+.discount-content h1{
+    font-size: 50px;
+    position: relative;
+    bottom: 50px;
+    right: 10px;
+    font-family: "poppins";
+}
+.discount-content h4 {
+    font-family: "Fredoka One" sans-serif;
+  }
+  
+  .discount {
+    z-index: -1;
+    position: relative;
+    top: 450px;
+    right: 60px;
+  }
+  [alt="headphone"] {
+    position: relative;
+    bottom: 300px;
+    z-index: -3;
+  }
+  
+  .headphone-btn {
+    position: relative;
+    bottom: 300px;
+  }
+  .headphone-btn-sm {
+    display:none;
+   
+  } 
+ /* .dots{
+    display: flex;
+    flex-direction: row;
+    flex-direction: 2;
+ } 
+ .dot yellow-dot{
+  color: #fe5e35;
+  margin-bottom: 80%;
+  width: 30%;
+  height: 30%;
+  justify-content: flex-end;
+ }  */
+
+
+  /* ---media quary--- */
+
+ /* ---------------------- */
+@media screen and (max-width: 800px){
+    * {
+      margin-left: 0px;
+      margin: 0;
+      padding: 0;
+    }
+    body nav {
+      display: flex;
+      height: 400px;
+      width: 100vw;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .logo{
+      position: absolute;
+      left: 40px;
+      top: 30px;
+      margin-bottom: 10%;
+    }
+
+    .nav-items {
+      display: flex;
+      height: 5vh;
+      width: 80vw;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 5%;
+      margin-left: 10%;
+   
+    }
+  
+    .nav-item {
+      margin: 25px;
+      font-size: 1rem;
+      font-family: "Poppins";
+      font-weight: 200;
+    }
+    [alt="actions"] {
+      width: 400px;
+      margin-right: -60px;
+      margin-top: 30%;
+    }
+  
+    .right-section {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+    }
+    .discount-content {
+      position: relative;
+      top: 170px;
+      right: 0px;
+      color: #fff;
+    }
+    .discount-content h1 {
+      font-size: 1rem;
+      position: relative;
+      bottom: 0px;
+      left: 20px;
+    }
+    .discount-content h4 {
+      font-family: "Fredoka One" sans-serif;
+      font-size: 0.8rem;
+    }
+  
+    .discount {
+      z-index: -1;
+      position: relative;
+      top: 250px;
+      right: 20px;
+      height: 100px;
+    }
+    [alt="headphone"] {
+      position: relative;
+      top: -100px;
+      height: 300px;
+      z-index: -3;
+    }
+  
+    .headphone-btn {
+      display: none;
+    }
+    .headphone-btn-sm {
+      display: block;
+      height: 40px;
+      width: 130px;
+      border: none;
+      border-radius: 50px;
+      background-color: #fe5e35;
+      color: #ffffff;
+      font-family: "Poppins";
+      position: relative;
+      bottom: 100px;
+    }
+    .action-btn {
+      height: 40px;
+      width: 130px;
+      border: none;
+      border-radius: 50px;
+      background-color: #fe5e35;
+      color: #ffffff;
+      font-family: "Poppins";
+      position: relative;
+      bottom: -200px;
+      margin: 10px;
+    }
+  
+    .left-section h3 {
+      display: inline;
+      font-size: 30px;
+      font-weight: 400;
+    }
+    .left-section h3 img {
+      display: inline;
+    }
+  
+    .left-section h1 {
+      font-size: 2rem;
+      font-weight: 400;
+      display: inline;
+      position: relative;
+      bottom: -10px;
+    }
+  
+    .sub-headlines {
+      position: relative;
+      bottom: -150px;
+      font-size: 15px;
+      left: 50px;
+    }
+    .sub-headline img {
+      background-color: #fe5e35;
+      border-radius: 20px;
+      padding: 5px;
+      position: relative;
+      top: 10px;
+      right: 10px;
+      height: 20px;
+    }
+  
+    .text {
+      position: relative;
+      bottom: -180px;
+    }
+    .intro-section {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      height: 100vh;
+    }
+    .action-btns {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
+  }
